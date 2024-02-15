@@ -1,6 +1,7 @@
 echo "Downloading ngrok..."
 curl https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > ngrok.zip
 unzip -o ngrok.zip
+tar xvzf ngrok.tgz -C /usr/local/bin
 
 echo "Creating config file /home/ec2-user/SageMaker/.ngrok/config.yml..."
 mkdir -p /home/ec2-user/SageMaker/.ngrok
