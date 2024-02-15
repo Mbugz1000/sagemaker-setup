@@ -4,7 +4,7 @@ tar -xvzf /home/ec2-user/ngrok.tgz -C /home/ec2-user
 
 echo "Creating config file /root/.config/ngrok/ngrok.yml..."
 mkdir -p /root/.config/ngrok 
-cat > /root/.config/ngrok/ngrok.yml << 'EOF'
+cat > /root/.config/ngrok/ngrok.yml <<'EOF'
 authtoken: $NGROK_AUTH_TOKEN
 tunnels:
     ssh:
