@@ -8,6 +8,7 @@ cat > /usr/bin/start-ngrok-ssh <<'EOF'
 #!/usr/bin/env bash
 set -e
 echo "Starting ngrok..."
+./ngrok config upgrade
 ./ngrok start --all --log=stdout --config /home/ec2-user/SageMaker/.ngrok/config.yml > /var/log/ngrok.log &
 sleep 10
 TUNNEL_URL=$(grep -Eo 'url=.+' /var/log/ngrok.log | cut -d= -f2)
