@@ -10,4 +10,4 @@ tunnels:
         proto: tcp
         addr: 22
 EOF
-chown -R ec2-user:ec2-user /home/ec2-user/SageMaker/.ngrok
+chown -R ec2-user:ec2-user /root/.config/ngrok/
