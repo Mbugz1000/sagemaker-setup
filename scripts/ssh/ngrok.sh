@@ -1,5 +1,5 @@
 echo "Downloading ngrok..."
-curl https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-arm64.tgz > /home/ec2-user/ngrok.tgz
+curl https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz > /home/ec2-user/ngrok.tgz
 tar -xvzf /home/ec2-user/ngrok.tgz -C /home/ec2-user
 
 echo "Creating config file /home/ec2-user/SageMaker/.ngrok/config.yml..."
